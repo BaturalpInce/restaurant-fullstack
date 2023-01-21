@@ -1,2 +1,2 @@
 # Full Stack Restaurant Website
-## Used React, Express, Firebase and Tailwind.
+## Used React, Node.js, Express, Firebase and Tailwind.
