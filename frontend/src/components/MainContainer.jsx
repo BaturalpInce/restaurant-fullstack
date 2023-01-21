@@ -8,7 +8,7 @@ export const MainContainer = () => {
   const [drinks, setDrinks] = useState([]);
 
   return (
-    <div className="bg-slate-100 w-screen">
+    <div className="w-screen bg-slate-50">
       <div className="text-6xl text-center pt-16">Menu</div>
       <MainDishes />
       <Desserts />

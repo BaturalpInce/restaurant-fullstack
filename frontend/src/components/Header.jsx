@@ -5,9 +5,9 @@ import { MdFacebook, MdEmail, MdFace } from "react-icons/md";
 
 export const Header = () => {
   return (
-    <header className="fixed z-50 w-screen p-6 px-16 bg-slate-300">
+    <header className="fixed z-50 w-screen">
         {/*desktop and table */}
-        <div className="hidden md:flex w-full h-full items-center justify-between">
+        <div className="hidden md:flex w-full h-full items-center justify-between p-6 px-16 bg-slate-300">
             <div className="flex items-center gap-2">
                 <img src={Logo} className="w-10 object-cover" alt="logo"/>
                 <p className="text-headingColor text-xl font-bold">Mr. Burger</p>
@@ -23,7 +23,13 @@ export const Header = () => {
           </div>
         </div>
         {/* mobile */}
-        <div className="flex md:hidden w-full h-full p-4"></div>
+        <div className="flex md:hidden w-full h-full p-6 px-8 bg-slate-300 justify-between">
+          <img src={Logo} className="w-10 object-cover" alt="logo"/>
+          <SearchbarCustom />
+          <h1>dropdown menu</h1>
+
+
+        </div>
     </header>
   )
 }
