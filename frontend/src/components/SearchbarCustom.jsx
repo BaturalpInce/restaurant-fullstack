@@ -16,12 +16,12 @@ export const SearchbarCustom = () => {
   }
 
   return (
-    <div className="flex bg-white p-2">
+    <div className="flex bg-white p-2  xs:w-52 -xs:w-36">
       <button onClick={()=>onSearch(data)} className="text-2xl">
         <MdSearch className="hover:text-blueSearch"/>
       </button>
       <div className="">
-        <input type="text" value={data} placeholder="Search" className="pl-2" onChange={onChange}/>
+        <input type="text" value={data} placeholder="Search" className="pl-2 xs:w-44 -xs:w-28" onChange={onChange}/>
         <div className="absolute dropdown">
           {contents.filter(item=>{
             const searchTerm = data.toLowerCase();
@@ -30,7 +30,7 @@ export const SearchbarCustom = () => {
           })
           .slice(0,5)
           .map((item)=>{
-            return <div key={item.full_name} onClick={()=>onSearch(item.full_name)}className="dropdown-row bg-slate-100 w-56 border-black border-2">{item.full_name}</div>
+            return <div key={item.full_name} onClick={()=>onSearch(item.full_name)}className="dropdown-row bg-slate-100 w-56 border-black border-2 xs:w-52 -xs:w-36">{item.full_name}</div>
           })}
         </div>
       </div>
