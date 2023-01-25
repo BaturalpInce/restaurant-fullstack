@@ -5,7 +5,7 @@ export const Drinks = () => {
 
     useEffect(() => {
         const fetchDrinks = async () => {
-            const response = await fetch('http://localhost:5050/drinks')
+            const response = await fetch('https://restaurant-fullstack-api.vercel.app/drinks')
             const responseJson = await response.json()
             console.log(responseJson);
             setDrinks(responseJson);

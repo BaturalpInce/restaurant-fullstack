@@ -4,7 +4,7 @@ export const Desserts = () => {
     const [desserts, setDesserts] = useState([]);
     useEffect(() => {
         const fetchDesserts = async () => {
-            const response = await fetch('http://localhost:5050/desserts')
+            const response = await fetch('https://restaurant-fullstack-api.vercel.app/desserts')
             const responseJson = await response.json()
             console.log(responseJson);
             setDesserts(responseJson);

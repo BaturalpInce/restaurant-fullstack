@@ -5,7 +5,7 @@ export const MainDishes = () => {
 
     useEffect(() => {
         const fetchMainDishes = async () => {
-            const response = await fetch('http://localhost:5050/maindishes')
+            const response = await fetch('https://restaurant-fullstack-api.vercel.app/maindishes')
             const responseJson = await response.json()
             console.log(responseJson);
             setMainDishes(responseJson);
