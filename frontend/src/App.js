@@ -1,6 +1,5 @@
 import React from 'react';
-import { Header } from './components';
-import { MenuContainer } from './components';
+import { Header, MenuContainer, HomeContainer } from './components';
 import { Routes, Route } from 'react-router-dom'; 
 const App = () => {
   return (
@@ -8,8 +7,8 @@ const App = () => {
       <Header />
       <main className="mt-20 w-full">
         <Routes>
-          <Route path="/" element={<MenuContainer />} />
-          <Route path="/home" element={<MenuContainer />} />
+          <Route path="/" element={<HomeContainer />} />
+          <Route path="/home" element={<HomeContainer />} />
           <Route path="/menu" element={<MenuContainer />} />
         </Routes>
       </main>
