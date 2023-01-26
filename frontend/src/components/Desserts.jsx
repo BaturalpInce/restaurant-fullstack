@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
+export const dessertNames = [];
 export const Desserts = () => {
     const [desserts, setDesserts] = useState([]);
     useEffect(() => {
@@ -11,15 +12,16 @@ export const Desserts = () => {
         }
         fetchDesserts();
     },[]);
-    const token = process.env.TOKEN;
-
+    const token = process.env.TOKEN;    
     return (
         <div id="DessertsContainer" className='ml-8 mr-8'>
-        <div className="text-4xl text-center mb-4">Desserts</div>
+        <div className="relative text-4xl mt-8 mb-4 text-center">Desserts</div>
         <div className="grid 2xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 -xs:hidden">
         {Object.keys(desserts).map((dessert) => {
+          dessertNames.push(dessert);
+          const idCreator = dessert.replace(/\s+/g, '');
           return ( 
-          <div id={dessert} key={dessert} className="flex relative bg-slate-300 mb-4 mt-4 mr-4">
+          <div id={idCreator} key={dessert} className="flex relative bg-slate-300 mb-4 mt-4 mr-4">
             <div>
                 <img src={desserts[dessert][2]+{token}} className="h-60 w-72 rounded-lg shadow-xl dark:shadow-gray-400" alt={dessert} />  
             </div>

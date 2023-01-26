@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
+export const mainDishNames = [];
 export const MainDishes = () => {
     const [mainDishes, setMainDishes] = useState([]);
 
@@ -16,12 +17,15 @@ export const MainDishes = () => {
     const token = process.env.TOKEN;
 
     return (
-        <div id="MainDishesContainer" className="m-8">
-        <div className="text-4xl text-center mb-4">Main Dishes</div>
+        <div id="MainDishesContainer" className="mr-8 ml-8">
+        <div className="relative text-4xl mt-8 mb-4 text-center">Main Dishes</div>
         <div className="grid 2xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 -xs:hidden">
         {Object.keys(mainDishes).map((maindish) => {
+          mainDishNames.push(maindish);
+          let idCreator = maindish.replace(/\s+/g, '');
+          idCreator = idCreator.replaceAll(/"|'/g, '');
           return ( 
-          <div id={maindish} key={maindish} className="flex relative bg-slate-300 mb-4 mt-4 mr-4">
+          <div id={idCreator} key={maindish} className="flex relative bg-slate-300 mb-4 mt-4 mr-4">
             <div>
             <img src={mainDishes[maindish][2]+{token}} className="h-60 w-72 rounded-lg shadow-xl dark:shadow-gray-400" alt={maindish}/>  
             </div>

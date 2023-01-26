@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
+export const drinkNames = [];
 export const Drinks = () => {
     const [drinks, setDrinks] = useState([]);
 
@@ -17,11 +18,13 @@ export const Drinks = () => {
 
     return (
         <div id="DrinksContainer" className='m-8'>
-        <div className="text-4xl text-center mb-4">Drinks</div>
+        <div className="relative text-4xl mt-8 mb-4 text-center">Drinks</div>
         <div className="grid 2xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 -xs:hidden">
         {Object.keys(drinks).map((drink) => {
+          drinkNames.push(drink);
+          const idCreator = drink.replace(/\s+/g, '');
           return ( 
-          <div id={drink} key={drink} className="flex relative bg-slate-300 mb-4 mt-4 mr-4">
+          <div id={idCreator} key={drink} className="flex relative bg-slate-300 mb-4 mt-4 mr-4">
             <div>
             <img src={drinks[drink][2]+{token}} className="h-60 w-72 rounded-lg shadow-xl dark:shadow-gray-400" alt={drink} />  
             </div>
