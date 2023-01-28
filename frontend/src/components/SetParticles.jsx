@@ -97,7 +97,7 @@ export const SetParticles = () => {
                       "mode": "repulse"
                     },
                     "onclick": {
-                      "enable": true,
+                      "enable": false,
                       "mode": "repulse"
                     },
                     "resize": true

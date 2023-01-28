@@ -42,6 +42,7 @@ export const SearchbarCustom = () => {
         <input type="text" value={data} placeholder="Search" className="pl-2 xs:w-44 -xs:w-28" onChange={onChange}/>
         <div className="absolute dropdown">
           {contents.filter(item=>{
+            
             count = count + 1;
             const searchTerm = data.toLowerCase();
             const fullName = item.toLowerCase();
