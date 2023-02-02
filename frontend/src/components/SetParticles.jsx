@@ -4,26 +4,16 @@ import { loadFull } from "tsparticles";
 
 export const SetParticles = () => {
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(engine);
     }, []);
-
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
-    }, []);
-
     return (
         <Particles
             id="tsparticles"
             init={particlesInit}
-            loaded={particlesLoaded}
             options={{
                 "particles": {
                   "number": {
-                    "value": 400,
+                    "value": 100,
                     "density": {
                       "enable": true,
                       "value_area": 800
@@ -59,7 +49,7 @@ export const SetParticles = () => {
                   },
                   "size": {
                     "value": 12,
-                    "random": true,
+                    "random": false,
                     "anim": {
                       "enable": false,
                       "speed": 40,
@@ -76,7 +66,7 @@ export const SetParticles = () => {
                   },
                   "move": {
                     "enable": true,
-                    "speed": 3,
+                    "speed": 4,
                     "direction": "bottom",
                     "random": false,
                     "straight": false,

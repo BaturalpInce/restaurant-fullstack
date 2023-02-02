@@ -37,11 +37,14 @@ module.exports = {
         620: "620px",
       },
       screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
+        "xs": "400px",
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
         "2xl": "1536px",
+        "-xs": {max: "420px"},
+        "-sm": {max: "640px"}
       },
       colors: {
         headingColor: "#2e2e2e",
@@ -55,6 +58,7 @@ module.exports = {
         cartItem: "#2e3033",
         cartTotal: "#343739",
         blueSearch: "#797EF6",
+        backgroundColor: "#1D1D1D"
       },
     },
   },

@@ -7,7 +7,10 @@ import { drinkNames } from './Drinks';
 // TODO: add functionality when enter is pressed
 export const SearchbarCustom = () => {
   const [data, setData] = useState("");
-  const [contents, setContents] = useState([]);
+  var a = mainDishNames.concat(dessertNames);
+  var b = a.concat(drinkNames);
+  b = [...new Set(b)];
+  const contents = b;
   var count = 0;
 
   const onChange = (event) =>{
@@ -18,28 +21,21 @@ export const SearchbarCustom = () => {
     //console.log("searching", searchTerm);
     const scroll = (searchTerm) => {
       //const find = searchTerm.replace(/\s+/g, '');
-      let find = searchTerm.replaceAll("'", '');
-      find = find.replaceAll(" ", "");
+      var find = searchTerm.replace(/\s+/g, '');
+      find = find.replaceAll(/"|'/g, '');
       const section = document.querySelector('#'+find);
       section.scrollIntoView({behavior:'smooth', block:'center'});
     }
     scroll(searchTerm);
   }
 
-  useEffect(()=>{
-    var a = mainDishNames.concat(dessertNames);
-    var b = a.concat(drinkNames);
-    b = [...new Set(b)];
-    setContents(b);    
-  },[]);
-
   return (
-    <div className="flex bg-white p-2  xs:w-52 -xs:w-36">
+    <div className="flex bg-white p-2  xs:w-52 -xs:w-48">
       <button onClick={()=>onSearch(data)} className="text-2xl">
         <MdSearch className="hover:text-blueSearch"/>
       </button>
       <div className="">
-        <input type="text" value={data} placeholder="Search" className="pl-2 xs:w-44 -xs:w-28" onChange={onChange}/>
+        <input type="text" value={data} placeholder="Search" className="pl-2 xs:w-44 -xs:w-36" onChange={onChange}/>
         <div className="absolute dropdown">
           {contents.filter(item=>{
             

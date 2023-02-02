@@ -1,0 +1,170 @@
+{
+    "reviews": [
+      {
+        "nameSurnameUser": "John Doe",
+        "rating": 5,
+        "reviewData": "Visited Mr. Burger for the first time today and was thoroughly impressed! The view of the snow-capped mountains from the restaurant is breathtaking. The burgers were juicy and delicious. Highly recommend this place."
+      },
+      {
+        "nameSurnameUser": "Jane Smith",
+        "rating": 4,
+        "reviewData": "What a unique dining experience at Mr. Burger! The mountain views are gorgeous and the burgers are big and tasty. The service could have been a bit faster but overall a great time."
+      },
+      {
+        "nameSurnameUser": "Robert Johnson",
+        "rating": 3,
+        "reviewData": "The burgers at Mr. Burger are decent, but the real standout feature is the view. It's a must-visit for anyone looking to enjoy the beauty of the mountains while chowing down on a burger."
+      },
+      {
+        "nameSurnameUser": "Emma Williams",
+        "rating": 2,
+        "reviewData": "I was disappointed with my visit to Mr. Burger. The view is great but the burgers were dry and lacked flavor. Service was also slow. Not worth a repeat visit."
+      },
+      {
+        "nameSurnameUser": "Michael Brown",
+        "rating": 5,
+        "reviewData": "Mr. Burger is a hidden gem! The views of the mountains are breathtaking and the burgers are cooked to perfection. Highly recommend the mushroom burger. Will definitely be back!"
+      },
+      {
+        "nameSurnameUser": "Emily Davis",
+        "rating": 4,
+        "reviewData": "Incredible views and delicious burgers at Mr. Burger. Service was a bit slow but it was worth the wait. Can't wait to come back!"
+      },
+      {
+        "nameSurnameUser": "William Johnson",
+        "rating": 4,
+        "reviewData": "The view from Mr. Burger is breathtaking and the burgers are just as good. Highly recommend visiting if you're in the area."
+      },
+      {
+        "nameSurnameUser": "Isabella Gonzalez",
+        "rating": 3,
+        "reviewData": "Visited Mr. Burger for lunch and was pleasantly surprised by the views. The burgers were okay but nothing to write home about."
+      },
+      {
+        "nameSurnameUser": "Sophia Martinez",
+        "rating": 2,
+        "reviewData": "I was underwhelmed by my visit to Mr. Burger. The view was obstructed and the burgers were average at best. Not worth a repeat visit."
+      },
+      {
+        "nameSurnameUser": "Olivia Jones",
+        "rating": 5,
+        "reviewData": "Absolutely loved my experience at Mr. Burger! The views are stunning and the burgers are the best I've ever had. Highly recommend!"
+      },
+      {
+        "nameSurnameUser": "Ava Wilson",
+        "rating": 4,
+        "reviewData": "Great food and even better views at Mr. Burger. A must-visit if you're in the area."
+      },
+      {
+        "nameSurnameUser": "Evelyn Anderson",
+        "rating": 4,
+        "reviewData": "Loved the views from Mr. Burger! The burgers were also very tasty. A little pricey but worth it for the experience."
+      },
+      {
+        "nameSurnameUser": "Abigail Thomas",
+        "rating": 3,
+        "reviewData": "The view from Mr. Burger is great, but the burgers were just okay. Service was also slow. Would recommend for the view but not necessarily for the food."
+      },
+      {
+        "nameSurnameUser": "Mia Roberts",
+        "rating": 2,
+        "reviewData": "Visited Mr. Burger and was disappointed. The view was blocked by trees and the burgers were dry and overcooked. Service was also slow. Not worth a repeat visit."
+      },
+      {
+        "nameSurnameUser": "Madison Lee",
+        "rating": 5,
+        "reviewData": "Had a fantastic time at Mr. Burger! The views are breathtaking and the burgers are delicious. Highly recommend for anyone visiting the mountain."
+      },
+      {
+        "nameSurnameUser": "Charlotte King",
+        "rating": 4,
+        "reviewData": "Fantastic views and great food at Mr. Burger. Highly recommend for anyone visiting the area."
+      },
+      {
+        "nameSurnameUser": "Avery Lewis",
+        "rating": 4,
+        "reviewData": "The view from Mr. Burger is stunning and the burgers are also great. A bit pricey but worth it for the experience."
+      },
+      {
+        "nameSurnameUser": "Ella Baker",
+        "rating": 3,
+        "reviewData": "The view from Mr. Burger is great, but the burgers were just average. Service was also slow. Would recommend for the view but not necessarily for the food."
+      },
+      {
+        "nameSurnameUser": "Aaliyah Cooper",
+        "rating": 2,
+        "reviewData": "Not impressed with my visit to Mr. Burger. The view was obstructed and the burgers were dry and lacked flavor. Service was also slow. Not worth a repeat visit."
+      },
+      {
+        "nameSurnameUser": "Scarlett Rodriguez",
+        "rating": 5,
+        "reviewData": "Incredible views and delicious burgers at Mr. Burger. A must-visit when in the mountain."
+      },
+      {
+        "nameSurnameUser": "Aurora Nelson",
+        "rating": 4,
+        "reviewData": "Had a fantastic time at Mr. Burger. The views are breathtaking and the burgers are also great. Would definitely visit again."
+      },
+      {
+        "nameSurnameUser": "Aurora Hill",
+        "rating": 4,
+        "reviewData": "What a unique dining experience at Mr. Burger! The mountain views are stunning and the burgers are also very tasty. A bit pricey but worth it for the experience."
+      },
+      {
+        "nameSurnameUser": "Audrey Green",
+        "rating": 3,
+        "reviewData": "The view from Mr. Burger is great but the burgers were just okay. Service was also slow. Would recommend for the view but not necessarily for the food."
+      },
+      {
+        "nameSurnameUser": "Autumn Wright",
+        "rating": 2,
+        "reviewData": "Disappointed with my visit to Mr. Burger. The view was obstructed and the burgers were dry and lacked flavor. Service was also slow. Not worth a repeat visit."
+      },
+      {
+        "nameSurnameUser": "Ava Perez",
+        "rating": 5,
+        "reviewData": "Amazing views and delicious burgers at Mr. Burger. Highly recommend for anyone visiting the mountain."
+      },
+      {
+        "nameSurnameUser": "Avery Phillips",
+        "rating": 4,
+        "reviewData": "Fantastic views and great food at Mr. Burger. A must-visit when in the area."
+      },
+      {
+        "nameSurnameUser": "Avery Evans",
+        "rating": 4,
+        "reviewData": "The view from Mr. Burger is stunning and the burgers are also fantastic. A bit pricey but worth it for the experience."
+      },
+      {
+        "nameSurnameUser": "Avery Bailey",
+        "rating": 3,
+        "reviewData": "The view from Mr. Burger is great, but the burgers were just okay. Service was also slow. Would recommend for the view but not necessarily for the food."
+      },
+      {
+        "nameSurnameUser": "Avery Parker",
+        "rating": 2,
+        "reviewData": "Not impressed with my visit to Mr. Burger. The view was obstructed and the burgers were dry and lacked flavor. Service was also slow. Not worth a repeat visit."
+      },
+      {
+        "nameSurnameUser": "Avery Nelson",
+        "rating": 5,
+        "reviewData": "Incredible views and delicious burgers at Mr. Burger. A must-visit when in the mountain."
+      },
+      {
+        "nameSurnameUser": "Avery Campbell",
+        "rating": 4,
+        "reviewData": "Had a fantastic time at Mr. Burger. The views are breathtaking and the burgers are also great. Would definitely visit again."
+      },
+      {
+        "nameSurnameUser": "Avery Edwards",
+        "rating": 4,
+        "reviewData": "What a unique dining experience at Mr. Burger! The mountain views are stunning and the burgers are also very tasty. A bit pricey but worth it for the experience."
+      },
+      {
+        "nameSurnameUser": "Avery Powell",
+        "rating": 3,
+        "reviewData": "The view from Mr. Burger is great but the burgers were just okay. Service was also slow. Would recommend for the view but not necessarily for the food."
+      }
+    ]
+  }
+      

@@ -24,7 +24,7 @@ export const Header = () => {
   return (
     <header className="fixed z-50 w-screen">
         {/*desktop and table */}
-        <div className="hidden md:flex w-full h-full items-center justify-between p-6 px-16 bg-slate-300">
+        <div className="hidden md:flex w-full h-full items-center justify-between p-6 px-16 bg-slate-300 md:px-6">
             <div className="flex items-center gap-2" onClick={()=>{history("/home")}}>
                 <img src={Logo} className="w-10 object-cover cursor-pointer" alt="logo"/>
                 <p className="text-headingColor text-xl font-bold cursor-pointer">Mr. Burger</p>
@@ -40,12 +40,12 @@ export const Header = () => {
           </div>
         </div>
         {/* mobile */}
-        <div className="flex md:hidden w-full h-full p-6 px-8 bg-slate-300 justify-between">
-          <img src={Logo} className="w-10 object-cover" alt="logo"/>
+        <div className="flex md:hidden w-full h-full pt-6 pb-6 pl-2 pr-2 bg-slate-300 justify-between">
+          <img src={Logo} className="w-10 object-cover mr-2" alt="logo"/>
           <SearchbarCustom />
 
         { /* DROPDOWN MENU*/}
-        <div className="relative inline-block mr-8 ml-4" x-data={toggle.toString()}>
+        <div className="relative inline-block mr-8 ml-2" x-data={toggle.toString()}>
           <MdMenu className="h-10 text-4xl text-blueSearch cursor-pointer" onClick={()=> {handleClickDropdown(toggle)}} />
           { toggle ? 
           <ul className="dropdown-content absolute flex flex-col bg-slate-300" >
