@@ -46,7 +46,7 @@ export const SearchbarCustom = () => {
           })
           .slice(0,5)
           .map((item)=>{
-            return <div key={item+count} onClick={()=>onSearch(item)} className="dropdown-row bg-slate-100 w-56 border-black border-2 xs:w-52 -xs:w-36">{item}</div>
+            return <div key={item+count} onClick={()=>onSearch(item)} className="dropdown-row bg-slate-100 w-56 border-black border-2 xs:w-44 -xs:w-36">{item}</div>
           })}
         </div>
       </div>

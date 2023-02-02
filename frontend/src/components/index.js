@@ -7,3 +7,6 @@ export { MainDishes, mainDishNames} from './MainDishes';
 export { Desserts, dessertNames} from './Desserts';
 export { Drinks, drinkNames } from './Drinks';
 export { AboutContainer } from './AboutContainer';
+export { Gallery } from './Gallery';
+export { Reviews } from './Reviews';
+export { FAQ } from './FAQ';

@@ -1,13 +1,15 @@
 import React from 'react'
-
+import imgmain from './img/imgmain.png';
 export const AboutContainer = () => {
   return (
-
-    <div className="absolute flex mt-36 justify-center z-50">
-        <div className="flex flex-col justify-center items-center bg-slate-300 w-1/2 h-1/2 p-4">
-            <h1 className="text-3xl p-4">Welcome to the Official Website of Mr. Burger</h1>
-            <p className="text-xl pb-4 pt-2">Our restaurant is located at Atlantis. Even though we live under the sea, we do not offer any seafood in our menu. Our mission is to make the most delicious foods in the world. </p>    
-        </div>
+    <div className="flex w-screen mt-36 justify-center z-30">
+        <div className="flex flex-col justify-center items-center w-3/4 h-3/4 p-4">
+            <h1 className="text-4xl p-4">Welcome to the Official Website of Mr. Burger</h1>
+            <div className="flex flex-row w-full mt-4">
+              <p className="text-2xl pb-4 pt-2 w-1/2">We offer delicious meals at few different locations on Earth. The locations may change but we always stay at the top. Continue..  </p>
+              <img src={imgmain} className="max-w-lg ml-auto rounded-lg shadow-xl dark:shadow-gray-400" />   
+            </div>
+        </div> 
     </div>
   )
 }

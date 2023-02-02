@@ -8,7 +8,7 @@ export const MenuContainer = () => {
   return (
     <>
     <SetParticles />
-    <div className="w-screen z-50">
+    <div className="w-screen z-30">
       <div className="relative mt-12 text-6xl text-center -xs:text-4xl">Menu</div>
       <MainDishes />
       <Desserts />
