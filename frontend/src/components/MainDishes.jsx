@@ -26,7 +26,7 @@ export const MainDishes = () => {
           return ( 
           <div id={idCreator} key={maindish} className="flex -xs:flex-col relative bg-slate-300 mb-4 mt-4 mr-4">
             <div className="">
-            <img src={mainDishes[maindish][2]+{token}} className="h-60 w-72 rounded-lg shadow-xl dark:shadow-gray-400" alt={maindish}/>  
+            <img src={mainDishes[maindish][2]+{token}} className="h-60 w-72 rounded-lg shadow-xl dark:shadow-gray-400 -xs:w-auto" alt={maindish}/>  
             </div>
             <div id="data" className="ml-4 mt-4">
                 <h1 className="text-3xl -xs:text-lg">{maindish}</h1>
