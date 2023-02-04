@@ -50,14 +50,12 @@ export const Header = () => {
           <ul className="dropdown-content absolute flex flex-col bg-slate-300" >
               <li className="border-2 cursor-pointer" onClick={()=>{history("/home")}}>Home</li>
               <li className="border-2 cursor-pointer" onClick={()=>{history("/menu")}}>Menu</li>
-              <li className="border-2 cursor-pointer" onClick={()=>{history("/about")}}>About</li>
               <li className="border-2 cursor-pointer" onClick={()=>{history("/contact")}}>Contact</li>
           </ul> 
           :
           <ul className="dropdown-content absolute hidden bg-slate-300" >
               <li className="border-2 cursor-pointer" onClick={()=>{history("/home")}}>Home</li>
               <li className="border-2 cursor-pointer" onClick={()=>{history("/menu")}}>Menu</li>
-              <li className="border-2 cursor-pointer" onClick={()=>{history("/about")}}>About</li>
               <li className="border-2 cursor-pointer" onClick={()=>{history("/contact")}}>Contact</li>
           </ul> 
           }
