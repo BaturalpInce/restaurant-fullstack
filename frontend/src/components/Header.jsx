@@ -27,7 +27,7 @@ export const Header = () => {
         <div className="hidden md:flex w-full h-full items-center justify-between p-6 px-16 bg-slate-300">
             <div className="flex items-center gap-2" onClick={()=>{history("/home")}}>
                 <img src={Logo} className="w-10 object-cover cursor-pointer" alt="logo"/>
-                <p className="text-headingColor text-xl font-bold cursor-pointer">Mr. Burger</p>
+                <p className="text-headingColor text-xl font-bold cursor-pointer">Alpine Heights Bistro</p>
             </div>
             <ul className="flex items-center gap-8">
                 <li className="text-base text-textColor hover:text-blueSearch duration-100 transition-all ease-in-out cursor-pointer" onClick={()=>{history("/home")}}>Home</li>
