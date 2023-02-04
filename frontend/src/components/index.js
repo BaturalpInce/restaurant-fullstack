@@ -9,4 +9,5 @@ export { Drinks, drinkNames } from './Drinks';
 export { AboutContainer } from './AboutContainer';
 export { Gallery } from './Gallery';
 export { Reviews } from './Reviews';
-export { FAQ } from './FAQ';
+export { ContactContainer } from './ContactContainer';
+export { Contact } from './Contact';

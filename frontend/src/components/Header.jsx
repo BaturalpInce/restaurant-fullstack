@@ -32,7 +32,6 @@ export const Header = () => {
             <ul className="flex items-center gap-8">
                 <li className="text-base text-textColor hover:text-blueSearch duration-100 transition-all ease-in-out cursor-pointer" onClick={()=>{history("/home")}}>Home</li>
                 <li className="text-base text-textColor hover:text-blueSearch duration-100 transition-all ease-in-out cursor-pointer" onClick={()=>{history("/menu")}}>Menu</li>
-                <li className="text-base text-textColor hover:text-blueSearch duration-100 transition-all ease-in-out cursor-pointer" onClick={()=>{history("/about")}}>About</li>
                 <li className="text-base text-textColor hover:text-blueSearch duration-100 transition-all ease-in-out cursor-pointer" onClick={()=>{history("/contact")}}>Contact</li>
             </ul>
           <div>
