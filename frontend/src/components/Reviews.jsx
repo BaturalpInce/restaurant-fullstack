@@ -35,7 +35,6 @@ export const Reviews = () => {
     const fetchReviews = async () => {
       const response = await fetch('https://restaurant-fullstack-api.vercel.app/reviews')
       var responseJson = await response.json(); 
-      console.log(Object.values(responseJson));
       const shuffledJson = await shuffleResponse(responseJson);
       //responseJson[1] = responseJson[2];
       //üstteki çalışıyor yani random for loop çek içindekileri değiştir indexleri değil
@@ -68,7 +67,7 @@ export const Reviews = () => {
       >
           {Object.keys(reviewData).map((data) => {
             return (
-            <SwiperSlide className='mb-12 justify-self-center bg-slate-300 shadow-md shadow-slate-500 rounded-lg'>
+            <SwiperSlide key={reviewData[data]["nameSurnameUser"]} className='mb-12 justify-self-center bg-slate-300 shadow-md shadow-slate-500 rounded-lg'>
               <div className='flex flex-row'>
                 <h1 className='text-xl m-4'>{reviewData[data]["nameSurnameUser"]}</h1>
                 <div className="flex flex-row ml-auto m-4">{reviewData[data]["rating"]==5 ? <><MdStarRate/><MdStarRate/><MdStarRate/><MdStarRate/><MdStarRate/></> : 

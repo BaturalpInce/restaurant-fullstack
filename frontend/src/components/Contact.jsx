@@ -15,11 +15,21 @@ export const Contact = () => {
   const onChangeRevdata = (event) => {
     setRevdata(event.target.value);
   }
-  const submitAll = () => {
+  const submitAll = async() => {
     console.log(username);
     console.log(rating);
     console.log(revdata);
-
+    const tempJsonToPost = {"username":username, "rating":rating, "revdata":revdata};
+    const finalizedJsonToPost = JSON.stringify(tempJsonToPost)
+    const response = await fetch("https://restaurant-fullstack-api.vercel.app/contactreviews", {
+method: 'POST',
+headers: {
+  'Accept': 'application/json',
+  'Content-Type': 'application/json'
+},
+body: finalizedJsonToPost
+});
+  console.log(response);
   }
   return (
     <>
